@@ -1,0 +1,31 @@
+<header class="app-header container main-layout">
+  <div class="logo" routerLink="">
+    <!-- <img  src="../../assets/imgs/logo.svg"> -->
+    <h3 class="logo-title">
+   Mister Bitcoin
+   </h3>
+  </div>
+  <nav>
+    <a
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+
+    <a
+      routerLink="contact"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Contacts</a
+    >
+
+    <a
+      routerLink="statistic"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Statistic</a
+    >
+    <a *ngIf="user" (click)="logout()" routerLink="login" routerLinkActive="active">Log Out</a>
+  </nav>
+</header>

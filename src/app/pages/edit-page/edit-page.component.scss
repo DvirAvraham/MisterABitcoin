@@ -1,0 +1,52 @@
+.contact-edit {
+  height: 400px;
+  width: 400px;
+  position: fixed;
+  inset: 0;
+  top: -10%;
+  margin: auto;
+  background-color: #efefef;
+  box-shadow: -3px 1px 28px #00000061;
+  display: flex;
+  z-index: 5;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 11px;
+
+  h1 {
+    margin: 25px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0f0144;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    & button {
+      cursor: pointer;
+      background-color: #0f0144;
+      color: #f1f1f1;
+      padding: 5px 14px;
+      border-radius: 9px;
+      font-size: 1.1rem;
+      &:hover {
+        color: #0f0144;
+        background-color: #0f01444a;
+      }
+    }
+
+    & input {
+      margin-bottom: 30px;
+    }
+    label {
+      margin-top: 1em;
+    }
+
+    button {
+      width: 50%;
+      display: block;
+      margin: 20px auto;
+    }
+  }
+}

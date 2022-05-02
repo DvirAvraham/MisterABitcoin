@@ -1,0 +1,10 @@
+<section class="login">
+<h1 class="title">Login</h1>
+
+<img src="../../../assets/imgs/bit-login.gif" alt="">
+
+<form (ngSubmit)="onSaveUser()" class="login-form ">
+  <input [(ngModel)]="username" type="text" name="login" id="login" placeholder="  Name"/>
+  <button class="btn">Login</button>
+</form>
+</section>

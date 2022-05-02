@@ -1,0 +1,32 @@
+<section class="statistic-container">
+  <section class="bar-vertical-container">
+    <h2>Market Price</h2>
+    <ngx-charts-bar-vertical
+      [view]="[1000, 400]"
+      [results]="marketPrice"
+      [xAxisLabel]="'Market Price'"
+      [legendTitle]="'Market Avg Chart'"
+      [yAxisLabel]="'AVG'"
+      [legend]="true"
+      [showXAxisLabel]="true"
+      [showYAxisLabel]="true"
+      [xAxis]="true"
+      [yAxis]="true"
+      [gradient]="true"
+    >
+    </ngx-charts-bar-vertical>
+  </section>
+  <section class="pie-chart-container">
+    <h2>Confirmed Transactions</h2>
+    <ngx-charts-pie-chart
+      [view]="[1000, 400]"
+      [results]="confirmedTransactions"
+      [gradient]="gradient"
+      [legend]="showLegend"
+      [labels]="showLabels"
+      [doughnut]="isDoughnut"
+      [customColors]="colorScheme"
+    >
+    </ngx-charts-pie-chart>
+  </section>
+</section>

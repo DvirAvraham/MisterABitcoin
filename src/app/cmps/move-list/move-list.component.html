@@ -1,0 +1,9 @@
+<section class="move-list">
+  <div *ngIf="moves.length">
+  <h1 >Your last moves:</h1>
+  <move-preview *ngFor="let move of moves" [move]="move" class="move-preview"></move-preview>
+</div>
+<div *ngIf="!moves.length">
+<h1 class="no-moves">No moves yet...</h1>
+</div>
+</section>

@@ -1,0 +1,11 @@
+<section class="contact-edit">
+  <h1>{{ contact._id ? "Edit" : "Add" }} contact</h1>
+  <form (ngSubmit)="onSaveContact()">
+    <input [(ngModel)]="contact.name" type="text" name="name" id="name" placeholder="Name"/>
+    <input [(ngModel)]="contact.email" type="email" name="email" id="email"  placeholder="Email" required/>
+    <input [(ngModel)]="contact.phone" type="phone" name="phone" id="phone"  placeholder="Phone"/>
+    <button>Save</button>
+  </form>
+  <a routerLink="/contact">Back</a>
+</section>
+

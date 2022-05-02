@@ -1,0 +1,10 @@
+<section>
+  <router-outlet></router-outlet>
+  <contact-filter></contact-filter>
+  <a routerLink="edit" class="add">Add Contact</a>
+  <contact-list
+    class="contact-list "
+    (remove)="onRemoveContact($event)"
+    [contacts]="contacts$ | async"
+  ></contact-list>
+</section>

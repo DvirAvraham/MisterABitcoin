@@ -1,0 +1,25 @@
+.add {
+  position: fixed;
+  bottom: 35px;
+  right: 50px;
+  font-size: 1.1rem;
+  letter-spacing: 0.25px;
+  background: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #5f6368;
+  cursor: pointer;
+  font-weight: 500;
+  height: 60px;
+  min-width: 120px;
+  outline: none;
+  padding: 0 16px;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(207, 215, 195);
+  box-shadow: 8px 9px 18px -7px rgb(0 0 0 / 40%);
+  text-decoration: none;
+}

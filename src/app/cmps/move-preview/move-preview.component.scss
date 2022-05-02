@@ -1,0 +1,14 @@
+.moves-preview:not(last-child) {
+  border-bottom: 5px dotted #37c1c2;
+}
+
+.title {
+  background-color: #4204834f;
+  border-radius: 3px;
+  padding: 0 0.5rem;
+}
+
+.move-data {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
